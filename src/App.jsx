@@ -94,7 +94,7 @@ experience, and scalability.
   </a>
           </div>
           <div className="about-img">
-            <img className="myself" src="/myself.jpg"></img>
+            <img className="myself" src="myself.jpg"></img>
           </div>
         </section>
 
@@ -102,16 +102,16 @@ experience, and scalability.
   <h1 className="mb-4">Skills</h1>
   <div className="skills-grid">
     {[
-      { name: "HTML", img: "/html.png" },
-      { name: "CSS", img: "/css.png" },
-      { name: "Bootstrap", img: "/bootstrap.png" },
-      { name: "JavaScript", img: "/js.jpeg" },
-      { name: "React", img: "/react.png" },
-      { name: "Node.js", img: "/nodejs.jpeg" },
-      { name: "Express.js", img: "/expressjs.png" },
-      { name: "MongoDB", img: "/mongo.jpeg" },
-      { name: "Git And Gitbash", img: "/git.png" },
-      { name: "SQL", img: "/sql.png" },
+      { name: "HTML", img: "html.png" },
+      { name: "CSS", img: "css.png" },
+      { name: "Bootstrap", img: "bootstrap.png" },
+      { name: "JavaScript", img: "js.jpeg" },
+      { name: "React", img: "react.png" },
+      { name: "Node.js", img: "nodejs.jpeg" },
+      { name: "Express.js", img: "expressjs.png" },
+      { name: "MongoDB", img: "mongo.jpeg" },
+      { name: "Git And Gitbash", img: "git.png" },
+      { name: "SQL", img: "sql.png" },
     ].map((skill, index) => (
       <div key={index} className="skill-card">
         <img src={skill.img} alt={`${skill.name} logo`} className="skill-image" />
@@ -144,7 +144,7 @@ experience, and scalability.
          CSS: To create a modern, attractive, and fully responsive design.<br/>
          JavaScript: To enable interactivity and music player functionality.<br/>
         </p>
-        <img className="projectImg" src="/spotify.png"></img><br/><br/>
+        <img className="projectImg" src="spotify.png"></img><br/><br/>
         <button className="btn btn-primary" onClick={() => window.open('https://github.com/mayank1312/spotify-clone2', '_blank')}>
           View Project
         </button>
@@ -170,7 +170,7 @@ HTML & CSS : For structuring and styling the app layout and content. <br/>
 JavaScript: For interactivity and API integration. <br/>
 External Recipe API: To fetch recipe data dynamically based on user input. <br/>
            </p>
-           <img className="projectImg" src="/recipe.png"></img>
+           <img className="projectImg" src="recipe.png"></img>
            <br/><br/>
         <button className="btn btn-primary"  onClick={() => window.open('https://github.com/mayank1312/recipe-WEbsite', '_blank')}>View Project</button>
       </motion.div>
@@ -235,7 +235,7 @@ Technologies Used<br/>
         <h3>Contact Details</h3>
         <div className="detail">
           <img
-            src="/facebook.png"
+            src="facebook.png"
             alt="Facebook"
           />
           <a
@@ -248,7 +248,7 @@ Technologies Used<br/>
         </div>
         <div className="detail">
           <img
-            src="/linkedin.png"
+            src="linkedin.png"
             alt="LinkedIn"
           />
           <a
@@ -261,7 +261,7 @@ Technologies Used<br/>
         </div>
         <div className="detail">
           <img
-            src="/github.png"
+            src="github.png"
             alt="GitHub"
           />
           <a
@@ -274,14 +274,14 @@ Technologies Used<br/>
         </div>
         <div className="detail">
           <img
-            src="/email.png"
+            src="email.png"
             alt="Email"
           />
           <p>mayankdeepakdhingra@gmail.com</p>
         </div>
         <div className="detail">
           <img
-            src="/phone.png"
+            src="phone.png"
             alt="Phone Number"
           />
           <p>+91-9667918798</p>
@@ -331,7 +331,7 @@ Technologies Used<br/>
     rel="noopener noreferrer"
      aria-label="Chat on WhatsApp"
   >
-    <img src="/whatsapp.png" alt="WhatsApp"></img>
+    <img src="whatsapp.png" alt="WhatsApp"></img>
   </a>
     </div>
   );
