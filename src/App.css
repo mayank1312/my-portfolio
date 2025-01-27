@@ -1,0 +1,724 @@
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+ 
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  
+  background: url("/bg.jpg") no-repeat center center  fixed;
+  background-size: cover;
+  min-height: 100vh;
+  overflow-x: hidden;
+  
+  color: white !important;
+}
+
+.container1 {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+/* Header Styles */
+.navbar{
+ 
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  color:white !important;
+}
+.container-fluid a{
+  color:white !important;
+
+}
+
+main{
+  margin-top:30px;
+}
+/* Section Styles */
+.section {
+  
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.0); /* Slight background overlay for better text contrast */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.0);
+}
+
+.about-section p,
+.projects-section p,
+.contact-section p,
+.skills-section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+.about-section{
+  text-align: left;
+  display: flex;
+  margin-top:70px;
+}
+
+@media screen and (max-width:900px){
+   .about-section{
+    flex-direction: column;
+    text-align: center;
+    
+   }
+}
+.myself{
+  height:200px;
+  width:200px;
+  border-radius: 50%;
+  border:3px double white;
+  margin-top:10px;
+}
+.btn {
+  background: #00bcd4;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: none; /* For anchor tag */
+  text-align: center;
+  display: inline-block; /* For consistent button appearance */
+  transition: background 0.3s ease;
+  color:white;
+}
+
+.btn:hover {
+  background: #008ba3;
+  color:white;
+}
+/* Skills Section */
+.skills-section {
+  text-align: center;
+  padding: 60px 20px;
+  color: white; /* Adjust the text color to fit your theme */
+}
+
+.skills-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Exactly 4 columns per row */
+  gap: 30px; /* Space between grid items */
+  padding: 0 100px; /* Padding from the left and right sides */
+  justify-content: center; /* Center the grid */
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark semi-transparent card background */
+  border: 2px solid white; /* Neon green border */
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.6); /* Glow effect */
+}
+
+.skill-image {
+  width: 100px; /* Set a fixed size for the images */
+  height: 100px;
+  margin-bottom: 10px;
+  object-fit: contain; /* Maintain aspect ratio */
+}
+
+.skill-card p {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0;
+  color: #ffffff; /* Text color inside the card */
+}
+@media (max-width: 1200px) {
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for smaller screens */
+    padding: 0 30px; /* Adjust padding */
+  }
+}
+
+@media (max-width: 900px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+    padding: 0 20px; /* Adjust padding */
+  }
+}
+
+@media (max-width: 600px) {
+  .skills-grid {
+    grid-template-columns: 1fr; /* 1 column for mobile screens */
+    padding: 0 10px; /* Adjust padding */
+  }
+}
+/* Project Section Styles */
+.projects-grid {
+  display:flex;
+  flex-direction: column;
+  gap:40px;
+  width:100%
+}
+.section1{
+  display:flex;
+}
+
+
+
+
+.project-card {
+  background: rgba(255, 255, 255, 0.1); /* Light card background */
+  padding: 20px;
+  border-radius: 10px;
+  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.small-card{
+  height:auto;
+  width:fit-content;
+}
+.project-card p{
+  text-align: left;
+}
+
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #00bcd4; /* Accent color */
+}
+.projectImg{
+  height:200px;
+  width:275px;
+  margin-bottom:10px;
+}
+
+/* Button Styles */
+.btn {
+  background: #00bcd4; /* Accent color */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #008ba3; /* Darker accent on hover */
+}
+.education-section {
+  display: flex;
+  width: 70%;
+  max-width: 1400px;
+  height:100vh;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  margin-top:50px;
+}
+.left-panel {
+  background-color: #32cd32;
+  width:50%;
+  height:80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  
+}
+.left-panel h1 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+.left-panel img {
+  width: 200px;
+  height: 150px;
+}
+.right-panel {
+  width:50%;
+  height:80%;
+  background-color: #16213e;
+  color: #fff;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.right-panel h2 {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+.right-panel p {
+  margin: 5px 0;
+}
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+  .education-section {
+    flex-direction: column; /* Stack the panels vertically */
+    height: auto; /* Allow content to expand naturally */
+    margin-bottom:30px;
+  }
+
+  .left-panel,
+  .right-panel {
+    width: 100%; /* Full width for each panel on smaller screens */
+    height: auto; /* Allow the panels to grow with content */
+    padding: 10px;
+  }
+
+  .left-panel img {
+    width: 150px; /* Reduce image size */
+    height: 120px;
+  }
+
+  .left-panel h1 {
+    font-size: 20px; /* Adjust heading size for small screens */
+  }
+
+  .right-panel h2 {
+    font-size: 18px; /* Adjust text size */
+  }
+
+  .right-panel p {
+    font-size: 16px; /* Adjust text size */
+  }
+}
+
+
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-float img {
+  width: 35px;
+  height: 35px;
+}
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.contact-details {
+  flex: 1;
+  margin-right: 2rem;
+}
+
+.contact-details h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.detail img {
+  width: 30px;
+  height: 30px;
+  margin-right: 1rem;
+}
+
+.contact-form {
+  flex: 1;
+}
+
+.contact-form h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  padding: 0.8rem;
+  background-color: #25d366;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #20b258;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .contact-details {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .contact-form {
+    margin-top: 2rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.9rem;
+  }
+
+  .contact-form button {
+    font-size: 0.9rem;
+    padding: 0.7rem;
+  }
+
+  .detail img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .contact-details h3,
+  .contact-form h3 {
+    font-size: 1.25rem;
+  }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .contact-section {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .contact-details {
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-form {
+    margin-top: 1.5rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1rem;
+  }
+
+  .contact-form button {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+
+  .detail img {
+    width: 28px;
+    height: 28px;
+  }
+}
+/* Extra Small Mobile (max-width: 400px) */
+@media (max-width: 400px) {
+  .contact-section {
+    flex-direction: column; /* Stack the contact details and form vertically */
+    padding: 1rem;
+  }
+
+  .contact-details {
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+    flex: none; /* Prevent it from stretching */
+  }
+
+  .contact-form {
+    flex: none; /* Prevent it from stretching */
+    width: 100%; /* Ensure form elements take full width */
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.9rem;
+    width: 100%; /* Ensure inputs and textarea are responsive */
+    box-sizing: border-box; /* Prevent overflow by including padding in width calculation */
+    word-wrap: break-word; /* Ensure long words wrap to the next line */
+    overflow-wrap: break-word; /* Force the text to break inside the box */
+  }
+
+  .contact-form button {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+    width: 100%; /* Make button full width */
+    box-sizing: border-box; /* Prevent overflow by including padding in width calculation */
+  }
+
+  .detail img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .contact-details h3,
+  .contact-form h3 {
+    font-size: 1.2rem;
+  }
+}
+/* Logo hover effect with smooth transition */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms, transform 300ms ease-in-out;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+  transform: scale(1.1);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+  transform: scale(1.1);
+}
+
+/* Skill Card Hover Effect */
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, rotate 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px) rotate(5deg);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.6);
+}
+
+/* Project Card Hover Effect */
+.project-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.2);  /* Change background on hover */
+}
+
+/* Education Section Transition (layout change on smaller screens) */
+.education-section {
+  display: flex;
+  width: 70%;
+  max-width: 1400px;
+  height: 100vh;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: flex-direction 0.3s ease-in-out;
+}
+
+@media (max-width: 900px) {
+  .education-section {
+    flex-direction: column;
+  }
+}
+
+/* WhatsApp Floating Button Hover Effect */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* General Button Hover Effect */
+.btn {
+  background: #00bcd4;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+  background: #008ba3;
+  color: white;
+}
+
+/* Section Transition (fade in effect when the section comes into view) */
+
+
+
+
+/* Add smooth transitions for layout changes on small screens */
+@media (max-width: 768px) {
+  /* Other responsive adjustments if needed */
+  .responsive-section {
+    transition: padding 0.3s ease, font-size 0.3s ease;
+  }
+}
+/* Education Section Animation */
+.education-section {
+  opacity: 0;
+  transform: translateY(30px); /* Start position below the original */
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.education-section.visible {
+  opacity: 1;
+  transform: translateY(0); /* Slide up smoothly */
+}
+
+/* Contact Section Animation */
+.contact-section {
+  opacity: 0;
+  transform: translateX(30px); /* Start from the right */
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.contact-section.visible {
+  opacity: 1;
+  transform: translateX(0); /* Slide in from the right smoothly */
+}
+
+/* Add the animation to all sections as they load */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply fade-in-up animation to education and contact sections */
+.education-section,
+.contact-section {
+  animation: fadeInUp 1s ease-out forwards; /* Smooth fade in and slide up effect */
+  opacity: 0; /* Make sure they start invisible */
+}
+/* Education Section Hover Shadow Effect */
+
+
+/* Contact Section Hover Shadow Effect */
+.contact-section {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* Lighter shadow */
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.contact-section:hover {
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4); /* Lighter shadow on hover */
+  transform: translateY(-5px); /* Slight lift effect */
+}
